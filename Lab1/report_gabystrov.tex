@@ -1,0 +1,99 @@
+\documentclass{article}
+
+
+% Для многоязычности
+\usepackage{polyglossia}
+\setdefaultlanguage[indentfirst=true,spelling=modern]{russian}
+\setotherlanguage{english}
+% Юникодные математические символы
+\usepackage{unicode-math}
+
+% Подключаем шрифт. Шрифт есть в дистрибутиве TeXLive
+\setmainfont[Ligatures={Common,TeX},Scale=0.94]{IBM Plex Serif}
+\setromanfont[Ligatures={Common,TeX},Scale=0.94]{IBM Plex Serif}
+\setsansfont[Ligatures={Common,TeX},Scale=MatchLowercase,Scale=0.94]{IBM Plex Sans}
+\setmonofont[Scale=MatchLowercase,Scale=0.94,FakeStretch=0.9]{IBM Plex Mono}
+
+% Математический шрифт
+\setmathfont{STIX Two Math}
+
+% Пакет для подключения картинок
+\usepackage{graphicx}
+\usepackage{float}
+% Пакет для ссылок (hyper references)
+\usepackage{hyperref}
+
+
+\author{Быстров Глеб Андреевич}
+\title{Отчет}
+
+% Для компиляции выполнить pdflatex main.tex
+
+\begin{document}
+\maketitle
+\pagebreak
+\section*{Введение}
+В данной лабораторной работе я устанавливал дистрибутив \LaTeX{} --- TeX Live на операционную систему Windows. 
+Целью работы было ознакомиться с процессом установки и конфигурации \LaTeX{} на персональном компьютере для дальнейшего использования 
+при подготовке научных и учебных отчётов. 
+
+\section*{Процесс выполнения лабораторной работы}
+Для выполнения работы я следовал официальной инструкции по установке TeX Live. Процесс установки включал несколько шагов, 
+подтверждённых скриншотами. 
+
+\subsection*{Шаг 1. Скачивание установочного файла}
+Сначала был загружен установочный файл TeX Live для Windows (рис.~\ref{img1}).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{1.png}
+    \caption{Загрузка установочного файла TeX Live для Windows}
+    \label{img1}
+\end{figure}
+
+\subsection*{Шаг 2. Запуск установщика}
+После запуска установочного файла открылось окно выбора типа установки (рис.~\ref{img2}).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{2.png}
+    \caption{Окно установщика TeX Live (выбор режима установки)}
+    \label{img2}
+\end{figure}
+
+\subsection*{Шаг 3. Настройка параметров установки}
+Были выбраны каталог установки и параметры (по умолчанию) для установки редактора TeXworks (рис.~\ref{img3}).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{3.png}
+    \caption{Окно выбора параметров установки TeX Live}
+    \label{img3}
+\end{figure}
+
+\subsection*{Шаг 4. Установка пакетов}
+Процесс установки включал поочередную загрузку и установку множества пакетов \LaTeX{}, что заняло продолжительное время (рис.~\ref{img4}).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{4.png}
+    \caption{Установка пакетов TeX Live}
+    \label{img4}
+\end{figure}
+
+\subsection*{Шаг 5. Завершение установки}
+На завершающем этапе были выполнены действия по настройке системы, генерации кэшей и завершению установки (рис.~\ref{img5}).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{5.png}
+    \caption{Финальный этап установки TeX Live}
+    \label{img5}
+\end{figure}
+
+\section*{Выводы}
+В ходе лабораторной работы была успешно выполнена установка дистрибутива \LaTeX{} --- TeX Live 2025 на Windows. 
+Я ознакомился с процессом скачивания установщика, выбора параметров, установки пакетов и завершения конфигурации системы. 
+Теперь мой компьютер готов к созданию отчётов и других документов с использованием \LaTeX{}. 
+
+\end{document}
