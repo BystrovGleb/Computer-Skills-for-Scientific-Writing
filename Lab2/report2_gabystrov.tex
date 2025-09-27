@@ -1,0 +1,83 @@
+\documentclass{article}
+
+% Для многоязычности
+\usepackage{polyglossia}
+\setdefaultlanguage[indentfirst=true,spelling=modern]{russian}
+\setotherlanguage{english}
+% Юникодные математические символы
+\usepackage{unicode-math}
+
+% Подключаем шрифт. Шрифт есть в дистрибутиве TeXLive
+\setmainfont[Ligatures={Common,TeX},Scale=0.94]{IBM Plex Serif}
+\setromanfont[Ligatures={Common,TeX},Scale=0.94]{IBM Plex Serif}
+\setsansfont[Ligatures={Common,TeX},Scale=MatchLowercase,Scale=0.94]{IBM Plex Sans}
+\setmonofont[Scale=MatchLowercase,Scale=0.94,FakeStretch=0.9]{IBM Plex Mono}
+
+% Математический шрифт
+\setmathfont{STIX Two Math}
+
+% Пакет для подключения картинок
+\usepackage{graphicx}
+\usepackage{float}
+% Пакет для ссылок (hyper references)
+\usepackage{hyperref}
+
+
+\author{Быстров Глеб Андреевич}
+\title{Отчет №2}
+
+% Для компиляции выполнить pdflatex main.tex
+
+\begin{document}
+\maketitle
+\pagebreak
+
+\section*{Цель работы}
+Ознакомиться со структурой документа в \LaTeX{}, научиться создавать простейший файл, добавлять абзацы,
+использовать комментарии (\%), жёсткие пробелы (\verb|~|), а также собрать PDF с помощью \texttt{xelatex}.
+
+\section*{Задание}
+Создать документ \texttt{exercise\_gabystrov.tex} со структурой преамбулы и тела документа, 
+набрать несколько абзацев, продемонстрировать жёсткие пробелы и комментарии; скомпилировать документ и получить PDF.
+
+\section*{Ход работы}
+
+\subsection*{Шаг 1. Подготовка исходного файла}
+Был создан исходный файл \texttt{exercise\_gabystrov.tex} и набран текст документа 
+с несколькими абзацами, комментариями и примерами жёстких пробелов (рис.~\ref{img1}).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\linewidth]{1.png}
+    \caption{Исходный текст документа в редакторе}
+    \label{img1}
+\end{figure}
+
+\subsection*{Шаг 2. Компиляция документа}
+Документ скомпилирован в терминале командой \texttt{xelatex exercise\_gabystrov.tex}. 
+На рисунке показан ход компиляции (рис.~\ref{img2}).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\linewidth]{2.png}
+    \caption{Компиляция документа с помощью \texttt{xelatex} в PowerShell}
+    \label{img2}
+\end{figure}
+
+\subsection*{Шаг 3. Просмотр результата}
+Получен итоговый PDF-документ, в котором видны абзацы, переносы строк и влияние жёстких пробелов
+на разрыв строк (рис.~\ref{img3}).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{3.png}
+    \caption{Результат компиляции в формате PDF}
+    \label{img3}
+\end{figure}
+
+\section*{Выводы}
+Создан и собран минимальный документ в \LaTeX{}. 
+Отработаны приёмы: организация структуры (преамбула/тело), добавление абзацев, комментариев и жёстких пробелов,
+а также компиляция исходного файла в PDF с помощью \texttt{xelatex}.
+
+\end{document}

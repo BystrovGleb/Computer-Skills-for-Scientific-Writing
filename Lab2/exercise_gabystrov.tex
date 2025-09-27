@@ -1,0 +1,35 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[T1]{fontenc}
+
+% Для многоязычности
+\usepackage{polyglossia}
+\setdefaultlanguage[indentfirst=true,spelling=modern]{russian}
+% Юникодные математические символы
+\usepackage{unicode-math}
+% Подключаем шрифт. Шрифт есть в дистрибутиве TeXLive
+\setmainfont[Ligatures={Common,TeX},Scale=0.94]{IBM Plex Serif}
+\setsansfont[Ligatures={Common,TeX},Scale=MatchLowercase,Scale=0.94]{IBM Plex Sans}
+\setmonofont[Scale=MatchLowercase,Scale=0.94,FakeStretch=0.9]{IBM Plex Mono}
+
+% Математический шрифт
+\setmathfont{STIX Two Math}
+
+% Пакет для подключения картинок
+\usepackage{graphicx}
+\usepackage{float}
+% Пакет для ссылок (hyper references)
+\usepackage{hyperref}
+ 
+\begin{document}
+
+%Первый абзац
+Привет мир! Это   мой  документ на LaTex. В этом абзаце несколько пробелов между словами, но видно их только в файле tex.
+
+%Пустая строка сделала новый абзац
+Попробую добавить жесткий пробел. Например, 2025~год всегда будет вместе и не будет разделено переносом.
+
+%В новом абзаце я посмотрю что комментарии не будет видно
+В конце предложения я поставлю комментарий, который не будет видно в PDF. %это комментарий
+
+\end{document}
+
